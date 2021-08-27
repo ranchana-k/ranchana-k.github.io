@@ -287,17 +287,11 @@
 				font-weight: 500 !important;
 			}
 		
-		#article-figure p
-		{
-			color: gray;
-			font-family: 'Tahoma';
-			font-size: 1em;
-		}
 
 		#article-content
 		{
 			text-align: left;
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 	/* Image */
 
@@ -314,8 +308,7 @@
 			
 			.image p
 			{
-				font-family: 'Tahoma' !important;
-				font-size: 0.5em !important;
+				font-family: sans-serif !important;
 				color: #b1b4b9 !important; 
 			}
 			.image.fit
