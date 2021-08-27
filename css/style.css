@@ -272,13 +272,12 @@
 	
 		#article-header.style1
 		{
-			text-align: center;
+			text-align: left;
 		}
 
 			header.style1 h2
 			{
 				font-weight: 700;
-				font-family: 'Quicksand' sans-serif !important;
 			}
 			
 			header.style1 p
@@ -292,12 +291,13 @@
 		{
 			color: gray;
 			font-family: 'Tahoma';
-			font-size: 0.5em
+			font-size: 1em;
 		}
 
 		#article-content
 		{
 			text-align: left;
+			font-size: 1.5em;
 		}
 	/* Image */
 
