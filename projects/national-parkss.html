@@ -13,6 +13,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
@@ -37,12 +38,12 @@
 	<nav>
 		<div class='container'>
 			<div class="row">
-				<div id="name" class="col-sm-5">
+				<div id="name" class="col-md-5 col-sm-2">
 					<h1 style="font-family: 'Roboto', sans-serif; letter-spacing: 0.1em;"><a href="">RANCHANA  KIRIYAPONG</a></h1>
 				</div>
 					
 					
-				<div class="col-sm-7 nav-links">
+				<div class="col-md-7 col-sm-10 nav-links">
 					<a class="button-1" href="">About</a>
 					<a class="button-1" href="#portfolio">Projects</a>
 					<a class="button-1" href="#team">Certificates</a>
@@ -59,14 +60,21 @@
 		<section id="intro" class="container">
                     
             <!-- Content -->
-                <div id="content">
+                <div id="content" class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
                     <article class="box post">
                         <header id="article-header" class="style1">
                             <h2>Biodiversity in National Parks<br class="mobile-hide" />
                            </h2>
 						   <p></p>
                         </header>
-                  
+                        <div id="article-figure" class="image">
+                            <img src="/images/national_park.jpg"/>
+                            <p>Photo by <a href="https://unsplash.com/@jan_huber?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jan Huber</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                        </div>
+                        <div id="article-content">
+                            
                         <p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
                         odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum 
                         facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam 
@@ -96,7 +104,10 @@
                         magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat 
                         leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit 
                         amet risus elit.</p>
+                        </div>
                     </article>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
 		</section>
         </div>
