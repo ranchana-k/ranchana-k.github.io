@@ -40,9 +40,11 @@
 
 			header.style1 h2
 			{
+				font-family: 'Quicksand' sans-serif !important;
 				font-size: 2em;
 				letter-spacing: 0.075em;
 				line-height: 1.5em;
+				
 			}
 			
 			header.style1 p
@@ -257,7 +259,7 @@
 
 		.wrapper .title
 		{
-			font-size: 0.9em;
+			font-size: 1em;
 			width: 25em;
 			height: 3.25em;
 			top: -3.25em;
@@ -270,6 +272,7 @@
 	#header-wrapper
 	{
 		padding: 0;
+
 	}
 
 	#intro-wrapper
