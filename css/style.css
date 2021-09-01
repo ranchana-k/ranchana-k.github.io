@@ -711,9 +711,14 @@
 /*********************************************************************************/
 /* Navigator Bar                                                                */
 /*********************************************************************************/	
-	.navbar-color
+	.navbar-custom
 	{
 		background-color: #AF4FFF;
+	}
+
+	.navbar-custom .navbar-text, .navbar-custom .navbar-text
+	{
+		color: #000;
 	}
 
 	nav .nav-links 
