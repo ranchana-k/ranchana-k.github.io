@@ -728,6 +728,10 @@
 		text-align: right; 
 	}
 
+	nav .nav-toggler
+	{
+		color: #FFF;
+	}
 	nav .show-menu {
 		display: none;
 		margin-top: 15px;
