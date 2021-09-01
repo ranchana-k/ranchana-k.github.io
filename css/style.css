@@ -529,29 +529,6 @@
 					text-align: center;
 				}
 
-/*********************************************************************************/
-/* Icons                                                                         */
-/*********************************************************************************/
-
-	.icon {
-		text-decoration: none;
-	}
-
-		.icon:before {
-			display: inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
-			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing:antialiased;
-			-moz-osx-font-smoothing:grayscale;
-		}
-		
-		.icon > .label {
-			display: none;
-		}
 
 /*********************************************************************************/
 /* Wrappers                                                                      */
@@ -730,29 +707,7 @@
 			}
 
 		
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
 
-	#name
-	{
-		padding-bottom: 0;
-	}
-	
-		#name h1
-		{
-			font-weight: 900;
-			font-size: 2em;
-			text-transform: uppercase;
-			color: #000;
-		}
-		
-		#name p
-		{
-			color: #eee;
-			color: rgba(255,255,255,0.5);
-			text-transform: uppercase;
-		}
 /*********************************************************************************/
 /* Navigator Bar                                                                */
 /*********************************************************************************/	
@@ -772,6 +727,20 @@
 		font-weight: 500;
 		text-align: right; 
 	}
+
+	nav .show-menu {
+		display: none;
+		margin-top: 15px;
+	}
+	
+	nav .show-menu span {
+		display: inline-block;
+		width: 28px;
+		height: 28px;
+		background: url(../images/icons/menu.png) left top no-repeat;
+		cursor: pointer;
+	}
+
 	.button-1 
 	{
 		display: inline-block;
