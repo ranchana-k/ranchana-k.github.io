@@ -715,6 +715,11 @@
 	{
 		background: #AF4FFF;
 	}
+
+	#nav-font-color
+	{
+		color: #000;
+	}
 	nav .nav-links 
 	{ 
 		font-family: 'Quicksand' sans-serif !important;
@@ -725,18 +730,7 @@
 	{
 		color: #FFF;
 	}
-	nav .show-menu {
-		display: none;
-		margin-top: 15px;
-	}
 	
-	nav .show-menu span {
-		display: inline-block;
-		width: 28px;
-		height: 28px;
-		background: url(../images/icons/menu.png) left top no-repeat;
-		cursor: pointer;
-	}
 
 	.button-1 
 	{
