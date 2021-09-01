@@ -720,6 +720,11 @@
 	{
 		color: #000;
 	}
+
+	a .nav-text-color
+	{
+		color: #000;
+	}
 	nav .nav-links 
 	{ 
 		font-family: 'Quicksand' sans-serif !important;
