@@ -48,7 +48,7 @@
 	a
 	{
 		text-decoration: underline;
-		color: #717479;
+		color: #fff;
 		-moz-transition: color .25s ease-in-out;
 		-webkit-transition: color .25s ease-in-out;
 		-o-transition: color .25s ease-in-out;
@@ -716,15 +716,6 @@
 		background: #AF4FFF;
 	}
 
-	#nav-font-color
-	{
-		color: #000;
-	}
-
-	a .nav-text-color
-	{
-		color: #000;
-	}
 	nav .nav-links 
 	{ 
 		font-family: 'Quicksand' sans-serif !important;
