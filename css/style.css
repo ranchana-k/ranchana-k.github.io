@@ -118,6 +118,16 @@
         padding-bottom: 1em;
     }
 
+    .image img
+    {
+        width: 100%;
+    }
+
+    .image p
+    {
+        text-align: center;
+    }
+
 
 /*********************************************************************************/
 /* Album Example from bootstrap                                                  */
