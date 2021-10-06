@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+
+    <title>Ranchana's Portfolio</title>
+	<base href="https://ranchana-k.github.io/" target="_blank">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top">
+      <div class='container'>
+        <a class="navbar-brand" id="name" href="#">Ranchana Kiriyapong</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2">
+            <li class="nav-item">
+            <a class="nav-link navbar-text" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbar-text" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbar-text" href="https://www.linkedin.com/in/ranchana-kiriyapong/">Linkedin</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbar-text" href="#">Medium</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<!-- Main -->
+	<main role="main">
+	<div id="" class="py-5">
+	
+		<div class="container">
+                    
+            <!-- Content -->
+                <div id="content" class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                    <article >
+                        <header id="blog-title">
+                            <h2>Biodiversity in National Parks</h2>
+                        </header>
+                        <div class="image">
+                            <img src="/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg"/>
+                            <p>Photo by <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Sinn</a> on <a href="https://unsplash.com/s/photos/data-heart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </p>
+                        </div>
+                        <div id="article-content">
+                            
+                        <p>Is there any relationship between zodiac signs and ones’ life? Some people believe that individuals of each sign share some
+                            similar characteristics. This project is to generate the sign for a user given other information.</p>
+
+                        <h4>Table of Contents</h4>
+                        <ol>
+                            <li>Exploratory Data Analysis
+                                <ol>
+                                    <li>Numeric Features</li>
+                                    <li>Categorical Features</li>
+                                </ol>
+                            </li>
+
+                            <li>Machine Learning Models Training
+                                <ol>
+                                    <li>K-Nearest Neighbors</li>
+                                    <li>Random Forest</li>
+                                    <li>Support Vector Machine</li>
+                                    <li>Multinomial Naive Bayes</li>
+                                </ol>
+                            </li>
+                            <li>3. Conclusion</li>
+                        </ol>
+                            <h1>1. Exploratory Data Analysis</h1>
+                            <p>The dataset in this project is from the only one file ‘profiles.csv’ having 59,946 records. There are 31 columns with
+                                only three numeric features: age, height, and income. The rest are categorical features and open-ended text. All
+                                the columns are as followings:</p>
+                            <ul>
+                            <li>
+                            <p><strong>age </strong><strong>numeric variable of ages of users</strong></p>
+                            </li>
+                            <li>
+                            <p><strong>body_type</strong> nominal categorical variable of users' body shapes such as average, thin, a little extra, etc.</p>
+                            </li>
+                            <li>
+                            <p><strong>diet</strong> categorical variable of users' kinds of foods they have such as anything, vegetarian, vegan, halal, etc.</p>
+                            </li>
+                            <li>
+                            <p><strong>drinks</strong> categorical variable that shows how often a user drink</p>
+                            </li>
+                            <li>
+                            <p><strong>drugs</strong> categorical variable that shows how often a user take in drugs</p>
+                            </li>
+                            <li>
+                            <p><strong>education</strong> categorical variable of users' highest education</p>
+                            </li>
+                            <li>
+                            <p><strong>essay0 - essay9</strong> These ten columns provide short answers of questions below by user</p>
+                            <ul>
+                            <li>
+                            <p><strong>essay0</strong> My self summary</p>
+                            </li>
+                            <li>
+                            <p><strong>essay1</strong> What I’m doing with my life</p>
+                            </li>
+                            <li>
+                            <p><strong>essay2</strong> I’m really good at</p>
+                            </li>
+                            <li>
+                            <p><strong>essay3</strong> The first thing people usually notice about me</p>
+                            </li>
+                            <li>
+                            <p><strong>essay4</strong> Favorite books, movies, show, music, and food</p>
+                            </li>
+                            <li>
+                            <p><strong>essay5</strong> The six things I could never do without</p>
+                            </li>
+                            <li>
+                            <p><strong>essay6</strong> I spend a lot of time thinking about</p>
+                            </li>
+                            <li>
+                            <p><strong>essay7</strong> On a typical Friday night I am</p>
+                            </li>
+                            <li>
+                            <p><strong>essay8</strong> The most private thing I am willing to admit</p>
+                            </li>
+                            <li>
+                            <p><strong>essay9</strong> You should message me if…</p>
+                            </li>
+                            </ul>
+                            </li>
+                            <li>
+                            <p><strong>height</strong> numeric variable of users' height in inches</p>
+                            </li>
+                            <li>
+                            <p><strong>income</strong> numeric variable of users' income</p>
+                            </li>
+                            <li>
+                            <p><strong>job</strong> categorical variable of user's job</p>
+                            </li>
+                            <li>
+                            <p><strong>last_online</strong> date and time when a user is last online</p>
+                            </li>
+                            <li>
+                            <p><strong>location</strong> categorical variable of the area in which a user lives in</p>
+                            </li>
+                            <li>
+                            <p><strong>offspring</strong> categorical variable that shows kids' status of a user and their thoughts about having more kids.</p>
+                            </li>
+                            <li>
+                            <p><strong>orientation</strong> categorical variable of user's gender orientation e.g. straight, gay, bisexual</p>
+                            </li>
+                            <li>
+                            <p><strong>pets</strong> categorical variable that shows pets' status of a user and their thoughts about petting animal.</p>
+                            </li>
+                            <li>
+                            <p><strong>religion</strong> categorical variable of user's religion</p>
+                            </li>
+                            <li>
+                            <p><strong>sex</strong> categorical variable of user's sex including 'm' for male and 'f' for female.</p>
+                            </li>
+                            <li>
+                            <p><strong>sign</strong> categorical varaible of user's zodiac signs such as aries, taurus, gemini</p>
+                            </li>
+                            <li>
+                            <p><strong>smokes</strong> categorical variable of how often a user smokes</p>
+                            </li>
+                            <li>
+                            <p><strong>speaks</strong> a short answer of user's languages</p>
+                            </li>
+                            <li>
+                            <p><strong>status</strong> categorical variable of member's status such as single, available, married</p>
+                            </li>
+                            </ul>
+
+                            <h4><strong>Missing Data Values</strong></h4>
+
+                            <pre class="western">age 0
+                            body_type 5296
+                            diet 24395
+                            drinks 2985
+                            drugs 14080
+                            education 6628
+                            essay0 5488
+                            essay1 7572
+                            essay2 9638
+                            essay3 11476
+                            essay4 10537
+                            essay5 10850
+                            essay6 13771
+                            essay7 12451
+                            essay8 19225
+                            essay9 12603
+                            ethnicity 5680
+                            height 3
+                            income 0
+                            job 8198
+                            last_online 0
+                            location 0
+                            offspring 35561
+                            orientation 0
+                            pets 19921
+                            religion 20226
+                            sex 0
+                            sign 11056
+                            smokes 5512
+                            speaks 50
+                            status 0
+                            dtype: int64</pre>
+                            <p>Most columns have a lot of missing values. Some features such as “diet” and “religion” had nearly 50% null values.</p>
+
+                            <h2>1.1 Numeric Features</h2>
+
+                            <p><img src="images/projects/okcupid/numeric_describe.png" width="422" height="308" name="Image1" border="0" /></p>
+                            <p>Exploring more about numeric data, only three columns are numeric: age, height, and income. OKCupid members’ ages ranged
+                                from 18-110 years old. With half of them were between 26-37 years old. There were some anomalies as height should not be
+                                low as 1 inch and around 80% had income equal to -1.</p>
+
+                            <h2>1.2 Categorical Features</h2>
+                            <p>There are some categorical features in which choices are very detailed, ie. “religion” and “sign”. In the column
+                                “religion”, the data includes both religion and level of seriousness. For example, people who are agnosticism may be
+                                very serious about it, not too serious about it, or laughing about it. Thus, columns “religion_cleaned” and “sign_cleaned”
+                                were created.</p>
+
+                            <p>In this projects, the features chosen to predict the variable <code>sign_cleaned</code> includes <code>body_type</code><code>diet</code>
+                                <code>drinks</code><code>drugs</code><code>education</code><code>job</code><code>offspring</code>
+                            <code>pets</code><code>religion_cleaned</code> and <code>smokes</code>. Each features has unique values excluding 'nan' as followings:</p>
+
+                            <pre class="western">body_type, 12 distinct values: ['a little extra' 'average' 'thin' 'athletic' 'fit' 'skinny' 'curvy'
+                             'full figured' 'jacked' 'rather not say' 'used up' 'overweight']
+                            diet, 18 distinct values: ['strictly anything' 'mostly other' 'anything' 'vegetarian'
+                             'mostly anything' 'mostly vegetarian' 'strictly vegan'
+                             'strictly vegetarian' 'mostly vegan' 'strictly other' 'mostly halal'
+                             'other' 'vegan' 'mostly kosher' 'strictly halal' 'halal'
+                             'strictly kosher' 'kosher']
+                            drinks, 6 distinct values: ['socially' 'often' 'not at all' 'rarely' 'very often' 'desperately']
+                            drugs, 3 distinct values: ['never' 'sometimes' 'often']
+                            education, 32 distinct values: ['working on college/university' 'working on space camp'
+                             'graduated from masters program' 'graduated from college/university'
+                             'working on two-year college' 'graduated from high school'
+                             'working on masters program' 'graduated from space camp'
+                             'college/university' 'dropped out of space camp'
+                             'graduated from ph.d program' 'graduated from law school'
+                             'working on ph.d program' 'two-year college'
+                             'graduated from two-year college' 'working on med school'
+                             'dropped out of college/university' 'space camp'
+                             'graduated from med school' 'dropped out of high school'
+                             'working on high school' 'masters program' 'dropped out of ph.d program'
+                             'dropped out of two-year college' 'dropped out of med school'
+                             'high school' 'working on law school' 'law school'
+                             'dropped out of masters program' 'ph.d program'
+                             'dropped out of law school' 'med school']
+                            job, 21 distinct values: ['transportation' 'hospitality / travel' 'student'
+                             'artistic / musical / writer' 'computer / hardware / software'
+                             'banking / financial / real estate' 'entertainment / media'
+                             'sales / marketing / biz dev' 'other' 'medicine / health'
+                             'science / tech / engineering' 'executive / management'
+                             'education / academia' 'clerical / administrative'
+                             'construction / craftsmanship' 'rather not say' 'political / government'
+                             'law / legal services' 'unemployed' 'military' 'retired']
+                            offspring, 15 distinct values: ['doesn&amp;rsquo;t have kids, but might want them'
+                             'doesn&amp;rsquo;t want kids' 'doesn&amp;rsquo;t have kids, but wants them'
+                             'doesn&amp;rsquo;t have kids' 'wants kids' 'has a kid' 'has kids'
+                             'doesn&amp;rsquo;t have kids, and doesn&amp;rsquo;t want any'
+                             'has kids, but doesn&amp;rsquo;t want more'
+                             'has a kid, but doesn&amp;rsquo;t want more' 'has a kid, and wants more'
+                             'has kids, and might want more' 'might want kids'
+                             'has a kid, and might want more' 'has kids, and wants more']
+                            pets, 15 distinct values: ['likes dogs and likes cats' 'has cats' 'likes cats'
+                             'has dogs and likes cats' 'likes dogs and has cats'
+                             'likes dogs and dislikes cats' 'has dogs' 'has dogs and dislikes cats'
+                             'likes dogs' 'has dogs and has cats' 'dislikes dogs and has cats'
+                             'dislikes dogs and dislikes cats' 'dislikes cats'
+                             'dislikes dogs and likes cats' 'dislikes dogs']
+                            religion_cleaned, 9 distinct values: ['agnosticism' 'atheism' 'christianity' 'other' 'catholicism'
+                             'buddhism' 'judaism' 'hinduism' 'islam']
+                            sign_cleaned, 12 distinct values: ['gemini' 'cancer' 'pisces' 'aquarius' 'taurus' 'virgo' 'sagittarius'
+                             'leo' 'aries' 'libra' 'scorpio' 'capricorn']
+                            smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to quit']</pre>
+                            <h1>2. Machine Learning Models Training</h1>
+                            <p>Four machine learning models were trained for this multi-labels classification.</p>
+                            <ul>
+                            <li>K Nearest Neighbors</li>
+                            <li>Random Forest</li>
+                            <li>Support Vector Machine</li>
+                                <li>Multinomial Naive Bayes</li>
+                            </ul>
+                            <p>The first three models will use the same data preparation. Only Naive Bayes model is used for the essay columns features.
+                            The dataset used for training and testing models had a lot of null values. After dropping null values the dataframe have 7,404 rows in total.
+                            The remaining dataset was divided into training data and testing data with ratio 80:20.</p>
+
+                            <h2>2.1 K-Nearest Neighbors</h2>
+                            <p><img src="images/projects/okcupid/knn_report.png" width="602" height="394" /></p>
+
+                            <p>The K-Nearest Neighbors classifier was trained starting using default k value equal to 5. Compared to real training
+                                labels the predicted classes quite differ. The average F1-score is at around 33%. Moreover, this model does not work
+                                well on the validation dataset. The average of F1-score on 5-folded cross-validation is 8% which were not different
+                                from random guessing.</p>
+
+                            <p>Besides, training the model with different k values cannot do better. The model's scores by iterating
+                            different k-values through for-loop got worse when the k-values increased.</p>
+                            <p><img src="images/projects/okcupid/knn_scores_with_diff_k.png" width="602" height="394"/></p>
+                            <h2>2.2 Random Forest</h2>
+                            <p><img src="images/projects/okcupid/rf_report.png" width="602" height="394" /></p>
+                            <p>It is clear that the model overfitted the training data as it got too perfect scores. Re-evaluating the model with cross-validation
+                                method, the model works not better than random guesses. The average F1-score is at around 8%</p>
+                            <p>As it was maybe because some hyperparameters were inappropriate. For example, the trees within the classifier
+                                were created with too many depths which ranged from 44-74. The function <code>GridSearchCV</code> was used to tune some hyperparameters:
+                                max_depth, max_features, min_samples_split, n_estimators and bootstrap.</p>
+                            <p>Even though the hyperparameters were changed to other values in GridSearchCV, the best score from the best parameters
+                                tried was still around 8%. The Random Forest model is not good enough for sign prediction.
+                            <h2>2.3 Support Vector Machine</h2>
+                            <p><img src="images/projects/okcupid/svm_report.png" width="602" height="394" /></p>
+                            <p>Similar to KNN model, the F1-score on training data and cross-validation data were 38% and 8%, respectively.</p>
+
+                            <h2>2.4 Multinomial Naive Bayes</h2>
+                            For Multinomial Naive Bayes, only essay columns were used for training and prediction. The preprocessing method is 'Term Frequency-Inverse Document Frequency'
+                            or TF-IDF. The dataset for training and testing includes totally 26,117 samples.
+                            <p><img src="images/projects/okcupid/nb_report.png" width="602" height="394" /></p>
+                            <p>From the classification report above, 'Cancer' and 'Gemini' seemed to be predicted well. There are some classes which the model is very bad at
+                                predicting. Especially when doing cross validation, the f1_score was worse than other models.</p>
+
+                            <h1>Conclusion</h1>
+                            <p>All four machine learning models cannot predict signs for users very well. For training data, K-Nearest Neighbors,
+                                Random Forest, SVM, and Multinomial Naive Bayes had f1-score at 33%, 100%, 38% and 31% in turn. However, this is
+                                because of overfitting data. After testing on validation data via using cross-validation all the models cannot do
+                                better than guessing which is around 8%</p>
+                            <strong>Future Work</strong>
+                            <p>We can investigate more if ‘Cancer’ and ‘Gemini’ can be really predicted well. Moreover,
+                                since the models are based on features provided, to increase the performance of prediction we should discuss which
+                                features should be collected more. Perhaps, consult with astrologers!</p>
+<p><br /><br /></p>
+
+                        </div>
+                    </article>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+	
+        </div>
+    </div>
+</main>
+	<!-- Footer -->
+	<div id="footer-wrapper">
+		<div id="footer" class="container">
+		  <div class="row">
+		  </div>
+		  <div id="copyright" >
+		  
+			  <p>&copy; All rights reserved | Ranchana Kiriyapong</p>
+	  
+		  </div>
+		</div>
+	  </div>
+	  
+		  <!-- Bootstrap core JavaScript
+		  ================================================== -->
+		  <!-- Placed at the end of the document so the pages load faster -->
+		  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		</body>
+	  </html>
