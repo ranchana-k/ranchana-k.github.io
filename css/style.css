@@ -128,18 +128,14 @@
         text-align: center;
     }
 
-    ol
+    #article-content
     {
-        counter-reset: item;
+        font-family: 'Quicksand', sans-serif !important;
     }
-    li
+
+    .inner-pre
     {
-        display: block;
-    }
-    li:before
-    {
-        content: counters(item, ".") " ";
-        counter-increment: item
+        font-size: 10px;
     }
 
 
