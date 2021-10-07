@@ -115,48 +115,48 @@
                             <div class="image">
                                 <img src="images/projects/okcupid/missingno_matrix.png" />
                             </div>
+                            <br>
                             <p>The column which has the greatest number of null values is <code>offspring</code> (around 59%). Meanwhile, 41% and 34% of records in the columns
                                 <code>diet</code> and <code>religion</code> are missing. The number of missing values in each column is shown below.
-                            <pre><span class="inner-pre">
-                            age 0
-                            body_type 5296
-                            diet 24395
-                            drinks 2985
-                            drugs 14080
-                            education 6628
-                            essay0 5488
-                            essay1 7572
-                            essay2 9638
-                            essay3 11476
-                            essay4 10537
-                            essay5 10850
-                            essay6 13771
-                            essay7 12451
-                            essay8 19225
-                            essay9 12603
-                            ethnicity 5680
-                            height 3
-                            income 0
-                            job 8198
-                            last_online 0
-                            location 0
-                            offspring 35561
-                            orientation 0
-                            pets 19921
-                            religion 20226
-                            sex 0
-                            sign 11056
-                            smokes 5512
-                            speaks 50
-                            status 0
-                            dtype: int64</span></pre>
+                            <pre><span class="inner-pre">age 0
+body_type 5296
+diet 24395
+drinks 2985
+drugs 14080
+education 6628
+essay0 5488
+essay1 7572
+essay2 9638
+essay3 11476
+essay4 10537
+essay5 10850
+essay6 13771
+essay7 12451
+essay8 19225
+essay9 12603
+ethnicity 5680
+height 3
+income 0
+job 8198
+last_online 0
+location 0
+offspring 35561
+orientation 0
+pets 19921
+religion 20226
+sex 0
+sign 11056
+smokes 5512
+speaks 50
+status 0
+dtype: int64</span></pre>
 
                             <h2>1.1 Numeric Features</h2>
 
                             <p><img src="images/projects/okcupid/numeric_describe.png" class="mx-auto d-block" /></p>
                             <p>Exploring more about numeric data, only three columns are numeric: <code>age</code>, <code>height</code>, and <code>income</code>. OKCupid members’ ages ranged
                                 from 18-110 years old. With half of them were between 26-37 years old. The distribution of age is shown below.</p>
-                            <p><img src="images/projects/okcupid/age_distribution.png" /></p>
+                            <p><img src="images/projects/okcupid/age_distribution.png" class="mx-auto d-block" /></p>
                             <p>There were some anomalies as height should not be low as 1 inch and around 80% had income equal to -1.</p>
 
                             <h2>1.2 Categorical Features</h2>
@@ -240,11 +240,9 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                                 labels the predicted classes quite differ. The average F1-score is at around 33%. The 5-folded cross-validation was
                                 done as follows:</p>
 
-                            <div class="highlight">
-                                <pre class="brush: python">
-                                    <span class="inner-pre highlight">print(cross_val_score(KNN_classifier, X_prepared, y_train, scoring='f1_macro', cv=5))</span>
-                                </pre>
-                            </div>
+                            <pre><code>print(cross_val_score(KNN_classifier, X_prepared, y_train, scoring='f1_macro', cv=5))</code></pre>
+
+
                             <pre><span class="inner-pre">[0.08563802 0.08084741 0.08077205 0.06490556 0.08670129]</span></pre>
                             <p>The scores show that this KNN classifier does not work well on the validation dataset. The average of F1-score
                                 on the validation dataset is 8% which were not different from random guessing.</p>
@@ -311,5 +309,6 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
 		  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-		</body>
+
+        </body>
 	  </html>

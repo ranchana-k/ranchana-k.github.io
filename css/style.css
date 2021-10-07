@@ -137,16 +137,12 @@
         font-weight: bold;
     }
 
+
     .inner-pre
     {
         font-size: 14px;
     }
 
-    div .highlight
-    {
-        background-color: #F5F5F5;
-        display: block;
-    }
 
 
 /*********************************************************************************/
