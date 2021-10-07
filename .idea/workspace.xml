@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00994fa7-4323-4f21-bd56-3a2d28d69c49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/holder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/holder.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/ie/PIE.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/ie/backgroundsize.min.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/ie/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/ie/v8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/images/overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/images/shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/style-1000px.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/style-desktop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/style-mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/js/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/js/jquery.dropotron.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/js/skel-layers.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/js/skel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/okcupid.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/okcupid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
