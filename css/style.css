@@ -1,3 +1,200 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*********************************************************************************/
+/* Navigator bar                                                                 */
+/*********************************************************************************/
+    
+    .navbar-custom
+    {
+        background-color: #A437FF;
+    }
+
+    .navbar-custom .navbar-brand
+    {
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+    }
+    .navbar-custom .navbar-text
+    {
+        color: #000 !important;
+    }
+
+    .nav-link
+    {
+        font-family: 'Quicksand', sans-serif !important;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+/*********************************************************************************/
+/* About                                                                         */
+/*********************************************************************************/
+    #aboutme
+    {
+        background-color: #343947;
+        text-align: left;
+    
+    }
+
+        #aboutme h1
+        {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        #aboutme p
+        {
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+        }
+
+/*********************************************************************************/
+/* Projects                                                                      */
+/*********************************************************************************/
+    #projects
+    {
+        background-color: #A437FF;
+    }
+        #projects-title
+        {
+            font-family: 'Quicksand', sans-serif !important;
+            font-weight: 700;
+            font-size: 2em;
+            text-align: center;
+            color: black;
+            padding-bottom: 1em;
+        }
+    .btn-group
+        {
+            position: absolute;
+            bottom: 12px;
+        }
+/*********************************************************************************/
+/* Courses                                                                     */
+/*********************************************************************************/
+#certificates
+{
+    background-color: #040273;
+    font-family: 'Quicksand', sans-serif !important;
+}
+    #cer-title
+    {
+        font-weight: 700;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        padding-bottom: 1em;
+    }
+/*********************************************************************************/
+/* Footer                                                                   */
+/*********************************************************************************/
+#footer-wrapper
+{
+    background-color: #343947;
+    font-family: 'Quicksand', sans-serif !important;
+    color: #d3d3d3;
+    text-align: center;
+}
+
+#footer
+{
+    padding: 2em;
+}
+
+/*********************************************************************************/
+/* Blog                                                                          */
+/*********************************************************************************/
+
+    #blog-title h2
+    {
+        font-family: 'Roboto', sans-serif !important;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2.5em;
+        color: black;
+        padding-bottom: 0.8em;
+    }
+
+    .image img
+    {
+        width: 100%;
+    }
+
+    .image p
+    {
+        text-align: center;
+    }
+
+    #article-content
+    {
+        font-family: 'Quicksand', sans-serif !important;
+    }
+
+    #article-content h2,h3,h4
+    {
+        font-weight: bold;
+    }
+
+    .inner-pre
+    {
+        font-size: 14px;
+    }
+
+    div .highlight
+    {
+        background-color: #F5F5F5;
+        display: block;
+    }
+
+
+/*********************************************************************************/
+/* Album Example from bootstrap                                                  */
+/*********************************************************************************/
+
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    margin-left: 10%;
+    max-width: 60%;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+=======
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /*********************************************************************************/
@@ -128,16 +325,6 @@
         text-align: center;
     }
 
-    #article-content
-    {
-        font-family: 'Quicksand', sans-serif !important;
-    }
-
-    .inner-pre
-    {
-        font-size: 10px;
-    }
-
 
 /*********************************************************************************/
 /* Album Example from bootstrap                                                  */
@@ -183,3 +370,4 @@
   }
   
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+>>>>>>> parent of b1f0e4a (Update OKCupid Project)
