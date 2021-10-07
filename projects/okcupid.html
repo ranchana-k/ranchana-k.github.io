@@ -151,7 +151,7 @@ speaks 50
 status 0
 dtype: int64</span></pre>
 
-                            <h2>1.1 Numeric Features</h2>
+                            <h3>1.1 Numeric Features</h3>
 
                             <p><img src="images/projects/okcupid/numeric_describe.png" class="mx-auto d-block" /></p>
                             <p>Exploring more about numeric data, only three columns are numeric: <code>age</code>, <code>height</code>, and <code>income</code>. OKCupid members’ ages ranged
@@ -159,7 +159,7 @@ dtype: int64</span></pre>
                             <p><img src="images/projects/okcupid/age_distribution.png" class="mx-auto d-block" /></p>
                             <p>There were some anomalies as height should not be low as 1 inch and around 80% had income equal to -1.</p>
 
-                            <h2>1.2 Categorical Features</h2>
+                            <h3>1.2 Categorical Features</h3>
                             <p>There are some categorical features in which choices are very detailed, ie. <code>religion</code> and <code>sign</code>. In the column
                                 <code>religion</code>, the data includes both religion and level of seriousness. For example, people who are agnosticism may be
                                 very serious about it, not too serious about it, or laughing about it. Thus, columns <code>religion_cleaned</code> and
@@ -221,7 +221,7 @@ religion_cleaned, 9 distinct values: ['agnosticism' 'atheism' 'christianity' 'ot
 sign_cleaned, 12 distinct values: ['gemini' 'cancer' 'pisces' 'aquarius' 'taurus' 'virgo' 'sagittarius'
                              'leo' 'aries' 'libra' 'scorpio' 'capricorn']
 smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to quit']</span></pre>
-                            <h1>2. Machine Learning Models Training</h1>
+                            <h2>2. Machine Learning Models Training</h2>
                             <p>Four machine learning models were trained for this multi-labels classification.</p>
                             <ul>
                             <li>K Nearest Neighbors</li>
@@ -233,7 +233,7 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                             The dataset used for training and testing models had a lot of null values. After dropping null values the dataframe have 7,404 rows in total.
                             The remaining dataset was divided into training data and testing data with ratio 80:20.</p>
 
-                            <h2>2.1 K-Nearest Neighbors</h2>
+                            <h3>2.1 K-Nearest Neighbors</h3>
                             <p><img src="images/projects/okcupid/knn_report.png" class="mx-auto d-block" /></p>
 
                             <p>The K-Nearest Neighbors classifier was trained starting using default k value equal to 5. Compared to true training
@@ -241,8 +241,6 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                                 done as follows:</p>
 
                             <pre><code>print(cross_val_score(KNN_classifier, X_prepared, y_train, scoring='f1_macro', cv=5))</code></pre>
-
-
                             <pre><span class="inner-pre">[0.08563802 0.08084741 0.08077205 0.06490556 0.08670129]</span></pre>
                             <p>The scores show that this KNN classifier does not work well on the validation dataset. The average of F1-score
                                 on the validation dataset is 8% which were not different from random guessing.</p>
@@ -250,7 +248,7 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                             <p>Besides, training the model with different k values cannot do better. The model's scores by iterating
                             different k-values through for-loop got worse when the k-values increased.</p>
                             <p><img src="images/projects/okcupid/knn_scores_with_diff_k.png" class="mx-auto d-block"/></p>
-                            <h2>2.2 Random Forest</h2>
+                            <h3>2.2 Random Forest</h3>
                             <p><img src="images/projects/okcupid/rf_report.png" class="mx-auto d-block" /></p>
                             <p>It is clear that the model overfitted the training data as it got too perfect scores. Re-evaluating the model with cross-validation
                                 method, the model works not better than random guesses. The average F1-score is at around 8%</p>
@@ -259,18 +257,18 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                                 max_depth, max_features, min_samples_split, n_estimators and bootstrap.</p>
                             <p>Even though the hyperparameters were changed to other values in GridSearchCV, the best score from the best parameters
                                 tried was still around 8%. The Random Forest model is not good enough for sign prediction.
-                            <h2>2.3 Support Vector Machine</h2>
+                            <h3>2.3 Support Vector Machine</h3>
                             <p><img src="images/projects/okcupid/svm_report.png" class="mx-auto d-block" /></p>
                             <p>Similar to KNN model, the F1-score on training data and cross-validation data were 38% and 8%, respectively.</p>
 
-                            <h2>2.4 Multinomial Naive Bayes</h2>
+                            <h3>2.4 Multinomial Naive Bayes</h3>
                             For Multinomial Naive Bayes, only essay columns were used for training and prediction. The preprocessing method is 'Term Frequency-Inverse Document Frequency'
                             or TF-IDF. The dataset for training and testing includes totally 26,117 samples.
                             <img src="images/projects/okcupid/nb_report.png" class="mx-auto d-block" />
                             <p>From the classification report above, 'Cancer' and 'Gemini' seemed to be predicted well. There are some classes which the model is very bad at
                                 predicting. Especially when doing cross validation, the f1_score was worse than other models.</p>
 
-                            <h1>3. Conclusion</h1>
+                            <h2>3. Conclusion</h2>
                             <p>All four machine learning models cannot predict signs for users very well. For training data, K-Nearest Neighbors,
                                 Random Forest, SVM, and Multinomial Naive Bayes had f1-score at 33%, 100%, 38% and 31% in turn. However, this is
                                 because of overfitting data. After testing on validation data via using cross-validation all the models cannot do
