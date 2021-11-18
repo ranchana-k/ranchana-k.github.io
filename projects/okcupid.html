@@ -240,8 +240,8 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                                 labels the predicted classes quite differ. The average F1-score is at around 33%. The 5-folded cross-validation was
                                 done as follows:</p>
 
-                            <pre><code>print(cross_val_score(KNN_classifier, X_prepared, y_train, scoring='f1_macro', cv=5))</code></pre>
-                            <pre><span class="inner-pre">[0.08563802 0.08084741 0.08077205 0.06490556 0.08670129]</span></pre>
+                            <pre class="p-3 bg-light"><code>print(cross_val_score(KNN_classifier, X_prepared, y_train, scoring='f1_macro', cv=5))</code></pre>
+                            <pre class="p-3 bg-white"><span>[0.08563802 0.08084741 0.08077205 0.06490556 0.08670129]</span></pre>
                             <p>The scores show that this KNN classifier does not work well on the validation dataset. The average of F1-score
                                 on the validation dataset is 8% which were not different from random guessing.</p>
 
