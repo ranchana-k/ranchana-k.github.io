@@ -234,7 +234,8 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                             The remaining dataset was divided into training data and testing data with ratio 80:20.</p>
 
                             <h3>2.1 K-Nearest Neighbors</h3>
-                            <p><img src="images/projects/okcupid/knn_report.png" class="mx-auto d-block" /></p>
+                            <div class="image">
+                            <img src="images/projects/okcupid/knn_report.png" class="mx-auto d-block" /></div>
 
                             <p>The K-Nearest Neighbors classifier was trained starting using default k value equal to 5. Compared to true training
                                 labels the predicted classes quite differ. The average F1-score is at around 33%. The 5-folded cross-validation was
@@ -247,9 +248,10 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
 
                             <p>Besides, training the model with different k values cannot do better. The model's scores by iterating
                             different k-values through for-loop got worse when the k-values increased.</p>
-                            <p><img src="images/projects/okcupid/knn_scores_with_diff_k.png" class="mx-auto d-block"/></p>
+                            <div class="image">
+                            <img src="images/projects/okcupid/knn_scores_with_diff_k.png" class="mx-auto d-block"/></div>
                             <h3>2.2 Random Forest</h3>
-                            <p><img src="images/projects/okcupid/rf_report.png" class="mx-auto d-block" /></p>
+                        <div class="image"><img src="images/projects/okcupid/rf_report.png" class="mx-auto d-block" /></div>
                             <p>It is clear that the model overfitted the training data as it got too perfect scores. Re-evaluating the model with cross-validation
                                 method, the model works not better than random guesses. The average F1-score is at around 8%</p>
                             <p>As it was maybe because some hyperparameters were inappropriate. For example, the trees within the classifier
@@ -258,13 +260,13 @@ smokes, 5 distinct values: ['sometimes' 'no' 'when drinking' 'yes' 'trying to qu
                             <p>Even though the hyperparameters were changed to other values in GridSearchCV, the best score from the best parameters
                                 tried was still around 8%. The Random Forest model is not good enough for sign prediction.
                             <h3>2.3 Support Vector Machine</h3>
-                            <p><img src="images/projects/okcupid/svm_report.png" class="mx-auto d-block" /></p>
+                        <div class="image"><img src="images/projects/okcupid/svm_report.png" class="mx-auto d-block" /></div>
                             <p>Similar to KNN model, the F1-score on training data and cross-validation data were 38% and 8%, respectively.</p>
 
                             <h3>2.4 Multinomial Naive Bayes</h3>
                             For Multinomial Naive Bayes, only essay columns were used for training and prediction. The preprocessing method is 'Term Frequency-Inverse Document Frequency'
                             or TF-IDF. The dataset for training and testing includes totally 26,117 samples.
-                            <img src="images/projects/okcupid/nb_report.png" class="mx-auto d-block" />
+                            <div class="image"><img src="images/projects/okcupid/nb_report.png" class="mx-auto d-block" /></div>
                             <p>From the classification report above, 'Cancer' and 'Gemini' seemed to be predicted well. There are some classes which the model is very bad at
                                 predicting. Especially when doing cross validation, the f1_score was worse than other models.</p>
 
