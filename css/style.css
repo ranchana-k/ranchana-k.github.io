@@ -46,8 +46,9 @@
 
         #aboutme p
         {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color: black;
+            font-weight: 600;
         }
 
 /*********************************************************************************/
@@ -237,8 +238,9 @@
 
         #aboutme p
         {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color: black;
+            font-weight: 600;
         }
 
 /*********************************************************************************/
