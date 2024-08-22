@@ -224,7 +224,7 @@
 /*********************************************************************************/
     #aboutme
     {
-        background-color: #343947;
+        background-color: #E5D4C3;
         text-align: left;
     
     }
@@ -232,13 +232,13 @@
         #aboutme h1
         {
             font-family: 'Roboto', sans-serif;
-            color: white;
+            color: black;
         }
 
         #aboutme p
         {
             font-family: 'Quicksand', sans-serif;
-            color: white;
+            color: black;
         }
 
 /*********************************************************************************/
