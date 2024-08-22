@@ -55,7 +55,7 @@
 /*********************************************************************************/
     #projects
     {
-        background-color: #AD9DC8;
+        background-color: #AD9DC8 !important;
     }
         #projects-title
         {
